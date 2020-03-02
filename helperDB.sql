@@ -40,3 +40,6 @@ $1 founder $3 employeeID $15 $7 firstName $9 $10 lastName $9 $10 dobDay $9 $10 d
 final comma remove
 (,)(\s{0,}\n{1,}\);)
 $2
+Seems the [] are unnecessary
+(\[)(\s{0,}[a-zA-Z]{0,}\s{0,})(\])
+$2
