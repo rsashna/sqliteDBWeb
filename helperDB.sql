@@ -1,10 +1,9 @@
-CREATE TABLE [ founder ](
-    [ employeeID ] INTEGER PRIMARY KEY AUTOINCREMENT(100),
-    [ firstName ] VARCHAR(100),
-    [ lastName ] VARCHAR(100),
-    [ dobDay ] VARCHAR(100),
-    [ dobMonth ] VARCHAR(100),
-    [ dobYear ] VARCHAR(100)
+CREATE TABLE [multimedia](
+    [toolName] VARCHAR(100) NOT NULL,
+    [toolType] VARCHAR(100),
+    [language] VARCHAR(100),
+    [employeeID] INTEGER PRIMARY KEY AUTOINCREMENT(100),
+    [currentWorth] INTEGER(100),
 );
 
 (CREATE TABLE \[)([a-z]{0,})(\]\(\n{0,}$\t{0,}\s{0,}\[)([a-zA-Z]{0,})(\] VARCHAR\(100\))( NOT NULL,)(\n{0,}$\t{0,}\s{0,}\[)([a-zA-Z]{0,})(\] VARCHAR\(100\),)(\n{0,}$\t{0,}\s{0,}\[)([a-zA-Z]{0,})(\] VARCHAR\(100\),)(\n\t{0,}\s{0,}\[)([a-zA-Z]{0,})(\]\s{0,}INTEGER\s{0,}PRIMARY\s{0,}KEY\s{0,}AUTOINCREMENT\(100\),)(\n\s{0,}\t{0,}\[)([a-zA-Z]{0,})(\]\s{0,}INTEGER\(100\),)(\n\);)
@@ -43,3 +42,6 @@ $2
 Seems the [] are unnecessary
 (\[)(\s{0,}[a-zA-Z]{0,}\s{0,})(\])
 $2
+Adding a drop table command before all tables
+(CREATE TABLE )([a-zA-Z]{0,}\s{0,})()(\()(\n{0,})
+DROP TABLE IF EXISTS $2;$5$1$2$3$4$5
