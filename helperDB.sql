@@ -45,3 +45,21 @@ $2
 Adding a drop table command before all tables
 (CREATE TABLE )([a-zA-Z]{0,}\s{0,})()(\()(\n{0,})
 DROP TABLE IF EXISTS $2;$5$1$2$3$4$5
+
+
+-- MainHelper:
+CREATE TABLE [multimedia](
+    [toolName] VARCHAR(100) NOT NULL,
+    [toolType] VARCHAR(100),
+    [language] VARCHAR(100),
+    [employeeID] INTEGER PRIMARY KEY AUTOINCREMENT(100),
+    [currentWorth] INTEGER(100),
+);
+
+-- DATE MAR16
+(VALUES \()(\n\s{0,})([a-zA-Z]{0,})(,\n\s{0,})([a-zA-Z]{0,})(,\n\s{0,})([a-zA-Z]{0,})
+$1$2'$3'$4'$5'$6'$7'
+-- varvchar needs ''
+(VALUES \()(\n\s{0,})(\'[a-zA-Z]{0,}\')(,\n\s{0,})(\'[a-zA-Z]{0,}\')(,\n\s{0,})(\'[a-zA-Z]{0,}\')
+
+[0-9]{0,}-[0-9]{0,}-[0-9]{0,}
